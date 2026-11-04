@@ -1,0 +1,41 @@
+{
+  "slug": "excel-clean-data",
+  "order": 2,
+  "title": "把 Excel 資料整理乾淨",
+  "subtitle": "處理空格、重複與缺漏，讓分析從可靠的表格開始。",
+  "category": "excel",
+  "minutes": 15,
+  "updated": "2026-11-03",
+  "goals": ["建立一列一筆、一欄一種資訊的資料結構。", "辨認多餘空格、完全重複與同 ID 的不同紀錄。", "在保留原始資料的前提下整理資料。"],
+  "intro": "從問卷或不同檔案複製資料時，空格、重複紀錄和缺漏值常會一起出現。先確認資料代表什麼，再決定怎麼整理。本課採自編樣本資料，不使用真實研究或公司資料。",
+  "concepts": [
+    {"term": "先保留原始資料", "explanation": "複製原始工作表再開始清理，另外記錄處理規則。每列代表一筆紀錄，每欄代表同一種資訊，表頭應清楚且一致。"},
+    {"term": "空格也可能影響比對", "explanation": "TRIM 可移除開頭、結尾及多餘的 ASCII 空格，保留單字間一個空格。它不會單獨處理所有 Unicode 空白，例如網頁常見的不分行空白。"},
+    {"term": "重複要有判斷標準", "explanation": "選哪些欄位比對，會改變去重結果。同一個 ID 可能有不同時間的合法紀錄；本課只移除整理後三欄完全相同的列。"},
+    {"term": "缺漏不是零", "explanation": "空白表示尚未提供或未知；0 是已知的數值。不能為了讓表格完整，就把缺漏分數全部改成 0。"}
+  ],
+  "steps": [
+    {"title": "複製一份原始工作表", "description": "保留原始資料，在副本整理。確認每欄的定義與每筆紀錄的意義，避免混用總計列與明細列。"},
+    {"title": "整理結構並建立表格", "description": "讓第一列是唯一的欄位名稱，選取資料後使用「常用 → 格式化為表格」，確認範圍及是否包含標題。"},
+    {"title": "用輔助欄清理空格", "description": "例如在新欄使用 =TRIM(B2) 清理名稱。比對前後結果，再視需要複製並貼上為值；不要直接丟掉原始欄位。"},
+    {"title": "先檢查，再決定去重", "description": "先看重複值，確認應比對的欄位，再使用「資料 → 移除重複」。同 ID 但內容不同的列應另行確認，不能一律刪除。"},
+    {"title": "記錄缺漏與整理結果", "description": "核對整理前後筆數、刪除原因及剩餘缺漏，保留整理紀錄，確保後續分析能追溯。"}
+  ],
+  "demo": {"type": "cleaner", "title": "資料整理練習桌", "description": "貼上以 Tab 分隔的三欄資料（ID、名稱、分數）。工具只清理 ASCII 空格、移除完全相同列；保留不同紀錄與缺漏值，最多 100 筆。"},
+  "mistakes": [
+    {"wrong": "同 ID 就一定是重複資料。", "better": "先確認紀錄單位；同一位受試者可能有多次量測。"},
+    {"wrong": "空白分數可以直接改成 0。", "better": "缺漏與零分有不同意義，需依研究設計處理並留紀錄。"},
+    {"wrong": "TRIM 能移除所有看起來像空白的字元。", "better": "TRIM 針對 ASCII 空格；其他字元須先辨識再選擇處理方式。"}
+  ],
+  "practice": {"task": "先觀察練習桌的範例，預測整理後會剩幾筆資料、哪些欄位仍是空白，再按「整理看看」核對。試著把其中一筆相同 ID 的分數改掉，觀察結果。", "solution": "預設範例有 4 筆資料，其中 1 筆整理後完全重複，因此保留 3 筆；R003 的分數仍是缺漏。若相同 ID 的分數不同，兩筆都會保留並出現提示。"},
+  "quiz": [
+    {"question": "同一個 ID 出現兩次，但分數不同，最適合先做什麼？", "choices": ["直接保留第一筆", "先確認是否為不同次量測或輸入錯誤", "取平均後刪掉原資料"], "answer": 1, "explanation": "先確認紀錄意義，才能制定有根據的去重方式。"},
+    {"question": "整理後分數仍是空白，代表什麼？", "choices": ["一定是零分", "屬於缺漏，需另外確認或依規則處理", "工具應自動猜一個分數"], "answer": 1, "explanation": "清理格式不等於能推知缺漏的真實數值。"}
+  ],
+  "checklist": ["我保留了原始工作表。", "我能說出判定重複所使用的欄位。", "我核對了整理前後筆數與缺漏值。"],
+  "sources": [
+    {"title": "Microsoft Support：設定 Excel 表格格式", "url": "https://support.microsoft.com/zh-tw/excel/format-an-excel-table", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：TRIM 函數", "url": "https://support.microsoft.com/zh-tw/excel/functions/trim-function", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：尋找及移除重複項目", "url": "https://support.microsoft.com/zh-tw/excel/find-and-remove-duplicates", "accessed": "2026-11-03"}
+  ]
+}

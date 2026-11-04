@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#476651">
+  <title>{{title}}</title>
+  <link rel="icon" href="{{prefix}}assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{prefix}}assets/site.css">
+  <script type="module" src="{{prefix}}assets/site.js"></script>
+</head>
+<body class="{{body_class}}">
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{prefix}}index.html" aria-label="小魚的研究生工具小教室首頁">
+        <img src="{{prefix}}assets/favicon.svg" alt="" width="42" height="42">
+        <span><b>小魚的研究生工具小教室</b><small>SELINA’S STUDY LAB</small></span>
+      </a>
+      <nav aria-label="主要導覽">
+        <a href="{{prefix}}index.html#lessons">學習單元</a>
+        <a href="{{prefix}}index.html#path">學習路徑</a>
+        <a href="{{prefix}}about.html">關於與規則 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <div class="storage-notice container" id="storage-notice" role="status" hidden>這個瀏覽器暫時無法儲存進度；本頁仍可練習，但重新整理或換頁後不會保留完成狀態。</div>
+  <main id="main">{{content}}</main>
+  <footer class="site-footer container">
+    <div><b>學一點，前進一點。</b><p>小魚 Selina 的學習筆記，也陪你整理研究生活。</p></div>
+    <div class="footer-links"><a href="{{prefix}}about.html">關於小教室</a><a href="{{prefix}}AGENTS.md" download>AGENTS.md ↓</a><span>© 2026 Selina</span></div>
+  </footer>
+  <script type="application/json" id="site-data">{{site_data}}</script>
+  <noscript><p class="container notice">教學內容可直接閱讀；搜尋、互動練習、測驗與進度需要開啟 JavaScript。</p></noscript>
+</body>
+</html>

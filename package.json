@@ -1,0 +1,6 @@
+{
+  "name": "selina-grad-toolbox",
+  "private": true,
+  "type": "module",
+  "scripts": {"build": "python3 scripts/build.py", "test": "python3 scripts/check.py"}
+}

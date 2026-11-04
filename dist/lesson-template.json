@@ -1,0 +1,34 @@
+{
+  "slug": "your-new-lesson",
+  "order": 4,
+  "title": "請換成具體的新課程標題",
+  "subtitle": "請用一句話說明讀者學完能完成的任務。",
+  "category": "general",
+  "minutes": 10,
+  "updated": "2026-11-03",
+  "goals": ["請填寫第一個可以實際驗證的學習目標。", "請填寫第二個可以實際驗證的學習目標。"],
+  "intro": "請填寫本課使用情境，說明為什麼需要這項工具技巧。",
+  "concepts": [
+    {"term": "第一個核心觀念", "explanation": "請以自己的話說明觀念，並交代必要的使用條件。"},
+    {"term": "第二個核心觀念", "explanation": "請補充一個讀者操作前需要理解的重點。"}
+  ],
+  "steps": [
+    {"title": "準備練習材料", "description": "請填寫讀者可以跟著做的準備步驟。"},
+    {"title": "進行關鍵操作", "description": "請寫出明確的操作動作與介面路徑，並查核官方來源。"},
+    {"title": "核對完成結果", "description": "請說明怎麼確認操作成功，以及發現問題時先檢查什麼。"}
+  ],
+  "demo": {"type": "none", "title": "本課使用操作練習", "description": "保留一般練習與小測驗，不新增專用互動元件。"},
+  "mistakes": [
+    {"wrong": "請填寫第一個常見誤解。", "better": "請填寫正確觀念或修正方式。"},
+    {"wrong": "請填寫第二個常見誤解。", "better": "請填寫正確觀念或修正方式。"}
+  ],
+  "practice": {"task": "請填寫一個能獨立完成的小任務。", "solution": "請提供可核對的參考步驟與預期結果。"},
+  "quiz": [
+    {"question": "請填寫第一題。", "choices": ["請填寫正確選項。", "請填寫有辨別力的其他選項。"], "answer": 0, "explanation": "請說明為什麼這個選項正確。"},
+    {"question": "請填寫第二題。", "choices": ["請填寫有辨別力的其他選項。", "請填寫正確選項。"], "answer": 1, "explanation": "請說明正確選項與使用條件。"}
+  ],
+  "checklist": ["我能完成第一項核心操作。", "我能核對操作的結果。", "我能說明一個常見錯誤的修正方式。"],
+  "sources": [
+    {"title": "範例來源：請替換為本課確實查閱的官方文件", "url": "https://support.microsoft.com/zh-tw/word/add-a-heading-in-a-word-document", "accessed": "2026-11-03"}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "word-table-of-contents",
+  "order": 1,
+  "title": "讓 Word 幫你整理目錄",
+  "subtitle": "從標題樣式開始，建立一份能更新的文件目錄。",
+  "category": "word",
+  "minutes": 12,
+  "updated": "2026-11-03",
+  "goals": ["為章節套用正確的標題層級。", "插入自動目錄，並在修改內容後更新它。", "找出目錄漏列章節的常見原因。"],
+  "intro": "報告越寫越長，手動輸入目錄很容易漏改。先把章節的結構交代清楚，再讓 Word 依標題樣式整理目錄，之後修改會輕鬆很多。以下以桌面版 Word 的概念與常見介面為例，不同版本的選單文字可能稍有差異。",
+  "concepts": [
+    {"term": "標題樣式是文件的骨架", "explanation": "「標題 1」用於主要章節，「標題 2」用於其下的小節。只加粗或放大字體，並不等於套用了標題樣式。"},
+    {"term": "自動目錄讀取章節結構", "explanation": "目錄依文件的標題建立。修改章節名稱、層級或頁碼後，要更新目錄，確認它反映最新內容。"},
+    {"term": "外觀與結構可以分開調整", "explanation": "先套用適合的標題層級，再調整樣式外觀；不要為了看起來好看而跳過層級。"}
+  ],
+  "steps": [
+    {"title": "先標記章與節", "description": "選取章名，在「常用」的樣式中套用「標題 1」；節名套用「標題 2」。先用幾個章節確認層級。"},
+    {"title": "插入自動目錄", "description": "把游標放到要放目錄的位置，從「參考資料 → 目錄」選自動目錄樣式。避免選到需要逐行手打的手動目錄。"},
+    {"title": "修改後更新整個目錄", "description": "章名、順序或層級改動後，在目錄上按右鍵選更新功能，選擇更新整個目錄。只有頁碼改變時，才考慮僅更新頁碼。"},
+    {"title": "核對漏列項目", "description": "若少了一節，回到原文確認是否真的套用了標題樣式，以及目錄顯示的層級是否包含該節，再更新一次。"}
+  ],
+  "demo": {"type": "outline", "title": "把文字變成文件骨架", "description": "切換每一行的樣式，觀察右側目錄如何改變。這是層級教學示範，不會計算真實 Word 頁碼。"},
+  "mistakes": [
+    {"wrong": "把文字放大，就會進入目錄。", "better": "需套用標題樣式；單純調字級不能代替文件結構。"},
+    {"wrong": "改完章名，只更新頁碼就夠。", "better": "章名或層級改變時，應更新整個目錄。"},
+    {"wrong": "所有小節都使用標題 1。", "better": "依章、節的關係使用層級，目錄才看得出結構。"}
+  ],
+  "practice": {"task": "在自己的練習文件建立「第一章 緒論」、「1.1 研究背景」、「1.2 研究目的」，套用合適層級並插入目錄。接著把研究目的改名為研究問題，更新目錄。", "solution": "第一章使用標題 1，1.1 與 1.2 使用標題 2。插入自動目錄後，修改原文章名，再更新整個目錄；確認新章名出現，並核對頁碼。"},
+  "quiz": [
+    {"question": "哪個動作最能讓新章節進入自動目錄？", "choices": ["只把字體放大", "套用適當的標題樣式，再更新目錄", "在目錄裡手動補上一行"], "answer": 1, "explanation": "標題樣式提供文件結構，自動目錄才能依結構建立與更新。"},
+    {"question": "章節名稱改動後，應選哪種更新？", "choices": ["僅更新頁碼", "更新整個目錄", "不需更新"], "answer": 1, "explanation": "名稱有變動時，更新整個目錄才能同步標題文字。"}
+  ],
+  "checklist": ["我能區分標題樣式與單純字體格式。", "我建立了章與節的層級。", "我能在改名後更新整個目錄。"],
+  "sources": [
+    {"title": "Microsoft Support：在 Word 文件中新增標題", "url": "https://support.microsoft.com/zh-tw/word/add-a-heading-in-a-word-document", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：插入目錄", "url": "https://support.microsoft.com/zh-tw/word/training/insert-a-table-of-contents", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：更新目錄", "url": "https://support.microsoft.com/zh-tw/word/update-a-table-of-contents", "accessed": "2026-11-03"}
+  ]
+}

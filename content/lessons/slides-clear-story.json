@@ -1,0 +1,40 @@
+{
+  "slug": "slides-clear-story",
+  "order": 3,
+  "title": "讓簡報一眼看懂重點",
+  "subtitle": "練習一句主訊息、三段表達，再用可讀的版面把它說清楚。",
+  "category": "slides",
+  "minutes": 10,
+  "updated": "2026-11-03",
+  "goals": ["把一頁簡報濃縮成一句清楚的主訊息。", "用情境、發現、下一步安排表達順序。", "檢查投影片標題、對比與閱讀順序。"],
+  "intro": "一頁塞進很多資料，觀眾可能看不出你最想說什麼。這堂課先練習內容取捨，再處理版面。範例為自編情境；「一頁一個主訊息」是本教室的編輯建議，實際頁數與內容仍要依報告目的調整。",
+  "concepts": [
+    {"term": "先寫一句主訊息", "explanation": "想一想：聽眾離開這頁後，最需要記住哪一句話？讓數字、圖表與說明圍繞它，避免每個項目搶同樣的注意力。"},
+    {"term": "用三段安排說明", "explanation": "先交代情境，再說明有根據的發現，最後提出下一步。本教室用這個簡單框架練習，不代表所有簡報都必須如此安排。"},
+    {"term": "讓閱讀有路徑", "explanation": "每張投影片使用清楚且具區別性的標題，文字與背景保持足夠對比；重要資訊不要只靠顏色區分。"},
+    {"term": "有數字，就交代來源", "explanation": "真實資料應註明來源與範圍；自編範例要明說。不要為了讓簡報有說服力而虛構成效或把相關當成因果。"}
+  ],
+  "steps": [
+    {"title": "寫下這頁要回答的問題", "description": "例如「這週報告最需要改善什麼？」先確定聽眾與目的，再開始挑資料。"},
+    {"title": "把標題改成具體訊息", "description": "相較於只有「整理結果」，試著寫出這頁真正支持的重點，例如「先統一欄位，再開始比對資料」。標題仍需忠於證據。"},
+    {"title": "刪除不支持主訊息的內容", "description": "保留必要背景與關鍵證據，補充細節放備用頁。讓視覺層級反映內容的重要程度。"},
+    {"title": "檢查可讀性並試講", "description": "縮小檢視時確認標題與關鍵資訊仍能辨識。使用 PowerPoint 協助工具檢查程式檢查標題、閱讀順序與對比，最後實際試講一次。"}
+  ],
+  "demo": {"type": "storyboard", "title": "把想法排成一張簡報", "description": "填入主訊息與三段內容，即時預覽簡報卡。這是表達練習，不會上傳資料，也不會自動評分。"},
+  "mistakes": [
+    {"wrong": "把所有講稿都貼到投影片上。", "better": "投影片突出主訊息與證據；口頭說明補充細節。"},
+    {"wrong": "用紅綠兩色就能讓每個人理解差異。", "better": "搭配文字標籤、圖形或線型，避免只靠顏色傳達資訊。"},
+    {"wrong": "範例數字不需要交代來源。", "better": "明示是自編教學範例；真實結果應附資料來源與適用範圍。"}
+  ],
+  "practice": {"task": "以「準備期末報告」為情境，寫一句主訊息，再用情境、發現、下一步各寫一到兩句。把不支持主訊息的內容刪掉，試著在 30 秒內說完。", "solution": "例如：主訊息「先完成資料定義，再開始做圖」。情境：小組即將整合報告；發現：成員使用的欄位名稱與單位不一致；下一步：先建立欄位對照表並確認單位。這是自編教學情境，沒有宣稱實際改善成果。"},
+  "quiz": [
+    {"question": "哪個標題更能交代這頁的具體訊息？", "choices": ["相關資料", "先統一欄位，再開始比對資料", "其他補充"], "answer": 1, "explanation": "具體標題能幫聽眾預期這頁的內容，但仍要確保有證據支持。"},
+    {"question": "要區分兩組資料，較適合怎麼呈現？", "choices": ["只使用紅色與綠色", "顏色搭配文字標籤或線型", "把說明文字都刪掉"], "answer": 1, "explanation": "多一種辨識方式，有助於不同視覺需求的讀者理解。"}
+  ],
+  "checklist": ["我的主訊息能用一句話說清楚。", "我只保留支持主訊息的內容。", "我檢查了標題、對比與資訊來源。"],
+  "sources": [
+    {"title": "Microsoft Support：讓 PowerPoint 簡報易於存取", "url": "https://support.microsoft.com/zh-tw/accessibility/powerpoint/make-your-powerpoint-presentations-accessible-to-people-with-disabilities", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：為投影片加上標題", "url": "https://support.microsoft.com/zh-tw/powerpoint/title-a-slide", "accessed": "2026-11-03"},
+    {"title": "Microsoft Support：協助工具檢查程式規則", "url": "https://support.microsoft.com/zh-TW/accessibility/office-accessibility/rules-for-the-accessibility-checker", "accessed": "2026-11-03"}
+  ]
+}
