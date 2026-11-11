@@ -6,14 +6,14 @@
 
 ## 2. LLM Wiki 成果
 - 原始專案： https://github.com/yuyuhuang0718-lang/selina-grad-toolbox/tree/main/week10-ai-literature
-- HTML Wiki 原始檔： https://github.com/yuyuhuang0718-lang/selina-grad-toolbox/blob/main/week10-ai-literature/wiki.html
-- 公開發布網址：待確認 GitHub Pages 啟用後補入。
+- HTML Wiki 原始檔： https://yuyuhuang0718-lang.github.io/selina-grad-toolbox/week10-ai-literature/wiki.html
+- GitHub Pages 建置／部署成功（2026-11-11），網址如下；請以瀏覽器開啟確認。
 
 已整理五篇正式文獻：Lewis et al. (2020) RAG、Gao et al. (2023) ALCE、Min et al. (2023) FActScore、Dhuliawala et al. (2024) CoVe、Asai et al. (2024) Self-RAG。來源涵蓋正式書目、摘要與方法筆記，延伸為六張核心概念頁。Crossref 官方資料用於 DOI 規則參考。尚未匯入完整 PDF，未宣稱完成逐頁全文核對。
 
 ## 3. 教學 HTML 簡報
-- HTML 簡報原始檔： https://github.com/yuyuhuang0718-lang/selina-grad-toolbox/blob/main/week10-ai-literature/slides.html
-- 公開發布網址：待確認 GitHub Pages 啟用後補入。
+- HTML 簡報原始檔： https://yuyuhuang0718-lang.github.io/selina-grad-toolbox/week10-ai-literature/slides.html
+- GitHub Pages 建置／部署成功（2026-11-11），網址如下；請以瀏覽器開啟確認。
 
 共 15 張 HTML 教學投影片，按照「問題 → DOI 與書目 → 引用主張與原文證據 → Wiki 流程 → 互動查核 → 結論」由淺入深設計。內含 DOI 和 Claim-Evidence 互動題，並以投影片與 Wiki 主題對照說明可追溯性。
 
@@ -28,4 +28,4 @@
 ## 6. 反思
 最容易出問題的節點是 Ingest 前的來源掃描與書目資料。原本只在後段 Lint 查錯，後來新增 Pre-ingest Metadata Gate，提前檢查輸入筆數、檔名、ID、題名、年份、DOI。若失敗就停止，不讓錯誤來源進入 Wiki。這讓 Graph 從單向「輸入→輸出」變為具有可追溯、可重試回路的知識管理流程。
 
-**補充：** 目前 PDF 全文未完成 ingest；公開 GitHub 網址須等網站實際啟用後驗證再填入，不把 GitHub 原始檔網址冒稱為已發布網站。
+**補充：** 目前 PDF 全文未完成 ingest。GitHub Pages 工作流程已回報成功，未能從本執行環境直接以 HTTP 檢查頁面，正式繳交前請自行開啟以上兩個網址確認畫面。
